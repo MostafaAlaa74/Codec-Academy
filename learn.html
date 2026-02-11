@@ -5,62 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn | Codec</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">CODEC</a>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <a href="index.html" class="logo" style="font-family: 'Orbitron', sans-serif;">CODEC</a>
+        
+        <div class="nav-controls">
+            <button id="lang-toggle" class="lang-btn"></button>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="learn.html" class="active">Learn</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="learn.html" class="active" data-i18n="nav_learn">Learn</a></li>
+            <li><a href="courses.html" data-i18n="nav_courses">Courses</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
     </nav>
 
     <section style="margin-top: 80px;">
         <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
-            <h2 class="section-title">How to <span>Learn</span></h2>
-            <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; color: #aaa;">Programming is a superpower. But like any skill, it requires the right approach and consistent effort.</p>
+            <h2 class="section-title" style="font-family: var(--font-heading); font-size: 2.5rem; margin-bottom: 1rem;">
+                <span data-i18n="learn_title_prefix">How to</span> <span style="color: var(--accent-color);" data-i18n="learn_title_suffix">Learn</span>
+            </h2>
+            <p data-i18n="learn_intro" style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; color: #aaa;">Programming is a superpower. But like any skill, it requires the right approach and consistent effort.</p>
         </div>
 
         <div class="content-grid">
             <div class="card reveal">
                 <div style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--accent-color);">01</div>
-                <h3>Master the Basics</h3>
-                <p>Before jumping into complex frameworks, understand the core logic. Variables, loops, and functions are the building blocks of everything you'll create.</p>
+                <h3 data-i18n="step1_title">Master the Basics</h3>
+                <p data-i18n="step1_desc">Before jumping into complex frameworks, understand the core logic. Variables, loops, and functions are the building blocks of everything you'll create.</p>
             </div>
             <div class="card reveal">
                 <div style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--accent-color);">02</div>
-                <h3>Computational Thinking</h3>
-                <p>Programming is more about thinking than typing. Learn how to break down large problems into smaller, manageable steps.</p>
+                <h3 data-i18n="step2_title">Computational Thinking</h3>
+                <p data-i18n="step2_desc">Programming is more about thinking than typing. Learn how to break down large problems into smaller, manageable steps.</p>
             </div>
             <div class="card reveal">
                 <div style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--accent-color);">03</div>
-                <h3>Consistent Practice</h3>
-                <p>The only way to get better is to write code every day. Build small projects, break them, and fix them. That's where the real learning happens.</p>
+                <h3 data-i18n="step3_title">Consistent Practice</h3>
+                <p data-i18n="step3_desc">The only way to get better is to write code every day. Build small projects, break them, and fix them. That's where the real learning happens.</p>
             </div>
         </div>
 
         <div class="split-section reveal" style="margin-top: 8rem;">
             <div class="split-text">
-                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">The <span>Roadmap</span></h2>
-                <p style="margin-bottom: 1.5rem;">We follow a structured path that takes you from zero to building your own applications. Our curriculum is designed by students who have successfully navigated this journey.</p>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">
+                    <span data-i18n="roadmap_title_prefix">The</span> <span style="color: var(--accent-color);" data-i18n="roadmap_title_suffix">Roadmap</span>
+                </h2>
+                <p data-i18n="roadmap_desc" style="margin-bottom: 1.5rem;">We follow a structured path that takes you from zero to building your own applications. Our curriculum is designed by students who have successfully navigated this journey.</p>
                 <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 1rem; display: flex; align-items: center;"><span style="color: var(--accent-color); margin-right: 10px;">&check;</span> Logic & Algorithms</li>
-                    <li style="margin-bottom: 1rem; display: flex; align-items: center;"><span style="color: var(--accent-color); margin-right: 10px;">&check;</span> Web Fundamentals</li>
-                    <li style="margin-bottom: 1rem; display: flex; align-items: center;"><span style="color: var(--accent-color); margin-right: 10px;">&check;</span> Software Architecture</li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: center;">
+                        <span style="color: var(--accent-color); margin-right: 10px; margin-left: 10px;">&check;</span> 
+                        <span data-i18n="roadmap_li1">Logic & Algorithms</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: center;">
+                        <span style="color: var(--accent-color); margin-right: 10px; margin-left: 10px;">&check;</span> 
+                        <span data-i18n="roadmap_li2">Web Fundamentals</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: center;">
+                        <span style="color: var(--accent-color); margin-right: 10px; margin-left: 10px;">&check;</span> 
+                        <span data-i18n="roadmap_li3">Software Architecture</span>
+                    </li>
                 </ul>
             </div>
             <div class="split-image">
@@ -74,7 +94,7 @@
             <a href="https://www.facebook.com/share/1E9acRGgLJ/">Facebook</a>
             <a href="https://www.tiktok.com/@codec302?is_from_webapp=1&sender_device=pc">Tiktok</a>
         </div>
-        <p class="copyright">&copy; 2026 Codec academy. Student-led, community-driven.</p>
+        <p class="copyright" data-i18n="footer_copy">&copy; 2026 Codec academy. Student-led, community-driven.</p>
     </footer>
 
     <script src="script.js"></script>

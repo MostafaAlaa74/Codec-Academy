@@ -5,60 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Codec</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">CODEC</a>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <a href="index.html" class="logo" style="font-family: 'Orbitron', sans-serif;">CODEC</a>
+        
+        <div class="nav-controls">
+            <button id="lang-toggle" class="lang-btn"></button>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" class="active" data-i18n="nav_about">About</a></li>
+            <li><a href="learn.html" data-i18n="nav_learn">Learn</a></li>
+            <li><a href="courses.html" data-i18n="nav_courses">Courses</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
     </nav>
 
     <section style="margin-top: 80px;">
         <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
-            <h2 class="section-title">About <span>Codec</span></h2>
-            <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; color: #aaa;">Codec is a community created and managed entirely by students. Our mission is simple: to help beginners start their programming journey correctly.</p>
+            <h2 class="section-title" style="font-family: var(--font-heading); font-size: 2.5rem; margin-bottom: 1rem;"><span data-i18n="about_title_span">About</span> <span style="color: var(--accent-color);">Codec</span></h2>
+            <p data-i18n="about_intro" style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; color: #aaa;">Codec is a community created and managed entirely by students. Our mission is simple: to help beginners start their programming journey correctly.</p>
         </div>
 
         <div class="split-section reveal">
             <div class="split-image">
-                <img src="images/Ourestory.png" alt="Student Community">
+                <img src="images/Ourestory.png" alt="Codec Story">
             </div>
             <div class="split-text">
-                <h2>Our Story</h2>
+                <h2 data-i18n="story_title">Our Story</h2>
                 <br>
-                <p style="margin-bottom: 1.5rem;">We started as a small group of students frustrated with the overwhelming amount of tutorials that didn't explain the "why". We wanted a place where we could learn from each other, share our struggles, and celebrate our wins.</p>
-                <p>Today, Codec is growing into a hub for student developers who value deep understanding over quick fixes.</p>
+                <p data-i18n="story_p1" style="margin-bottom: 1.5rem;">We started as a small group of students frustrated with the overwhelming amount of tutorials that didn't explain the "why". We wanted a place where we could learn from each other, share our struggles, and celebrate our wins.</p>
+                <p data-i18n="story_p2">Today, Codec is growing into a hub for student developers who value deep understanding over quick fixes.</p>
             </div>
         </div>
 
         <div class="content-grid">
             <div class="card reveal">
-                <h3>No Shortcuts</h3>
-                <p>We focus on understanding the core logic behind every line of code. We believe in building a foundation that lasts.</p>
+                <h3 data-i18n="val1_title">No Shortcuts</h3>
+                <p data-i18n="val1_desc">We focus on understanding the core logic behind every line of code. We believe in building a foundation that lasts.</p>
             </div>
             <div class="card reveal">
-                <h3>Peer Support</h3>
-                <p>Learning is better when you're not alone. Our community is built on the principle of students helping students.</p>
+                <h3 data-i18n="val2_title">Peer Support</h3>
+                <p data-i18n="val2_desc">Learning is better when you're not alone. Our community is built on the principle of students helping students.</p>
             </div>
             <div class="card reveal">
-                <h3>Practicality</h3>
-                <p>We prioritize building things that work. Our learning path is focused on real-world application and problem-solving.</p>
+                <h3 data-i18n="val3_title">Practicality</h3>
+                <p data-i18n="val3_desc">We prioritize building things that work. Our learning path is focused on real-world application and problem-solving.</p>
             </div>
         </div>
     </section>
@@ -68,7 +75,7 @@
             <a href="https://www.facebook.com/share/1E9acRGgLJ/">Facebook</a>
             <a href="https://www.tiktok.com/@codec302?is_from_webapp=1&sender_device=pc">Tiktok</a>
         </div>
-        <p class="copyright">&copy; 2026 Codec academy. Student-led, community-driven.</p>
+        <p class="copyright" data-i18n="footer_copy">&copy; 2026 Codec academy. Student-led, community-driven.</p>
     </footer>
 
     <script src="script.js"></script>

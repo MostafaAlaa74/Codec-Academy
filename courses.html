@@ -5,43 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses | Codec</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">CODEC</a>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <a href="index.html" class="logo" style="font-family: 'Orbitron', sans-serif;">CODEC</a>
+        <div class="nav-controls">
+            <button id="lang-toggle" class="lang-btn"></button>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="courses.html" class="active">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="learn.html" data-i18n="nav_learn">Learn</a></li>
+            <li><a href="courses.html" class="active" data-i18n="nav_courses">Courses</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
     </nav>
 
     <section style="height: 114vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
         <div class="reveal">
-            <div class="coming-soon-badge" style="font-size: 1rem; padding: 8px 20px; margin-bottom: 2rem;">Launch Phase</div>
-            <h1 style="font-size: 4.5rem; font-weight: 800; margin-bottom: 1.5rem; line-height: 1.1;">Our First Course is <br><span style="color: var(--accent-color); text-shadow: 0 0 30px var(--accent-glow);">Coming Soon</span></h1>
-            <p style="max-width: 600px; margin: 0 auto 3rem; color: #888; font-size: 1.2rem;">We are currently building something special for the next generation of developers. No shortcuts, no fluff—just the pure fundamentals of programming.</p>
+            <div class="coming-soon-badge" style="font-size: 1rem; padding: 8px 20px; margin-bottom: 2rem;" data-i18n="course_badge">Launch Phase</div>
+            
+            <h1 style="font-size: 4.5rem; font-weight: 800; margin-bottom: 1.5rem; line-height: 1.1;">
+                <span data-i18n="course_title_main">Our First Course is</span> <br>
+                <span style="color: var(--accent-color); text-shadow: 0 0 30px var(--accent-glow);" data-i18n="course_title_sub">Coming Soon</span>
+            </h1>
+            
+            <p data-i18n="course_desc" style="max-width: 600px; margin: 0 auto 3rem; color: #888; font-size: 1.2rem;">We are currently building something special for the next generation of developers. No shortcuts, no fluff—just the pure fundamentals of programming.</p>
             
             <div style="display: flex; gap: 1.5rem; justify-content: center;">
-                <a href="contact.html" class="btn">Get Notified</a>
-                <a href="index.html" class="btn" style="background: transparent; color: #fff; border: 1px solid #333;">Back to Home</a>
+                <a href="contact.html" class="btn" data-i18n="btn_notify">Get Notified</a>
+                <a href="index.html" class="btn" style="background: transparent; color: #fff; border: 1px solid #333;" data-i18n="btn_back">Back to Home</a>
             </div>
         </div>
         
-        <!-- Decorative element -->
         <div class="reveal" style="margin-top: 5rem; opacity: 0.2;">
             <div style="width: 2px; height: 100px; background: linear-gradient(to bottom, var(--accent-color), transparent); margin: 0 auto;"></div>
         </div>
@@ -52,11 +57,9 @@
             <a href="https://www.facebook.com/share/1E9acRGgLJ/">Facebook</a>
             <a href="https://www.tiktok.com/@codec302?is_from_webapp=1&sender_device=pc">Tiktok</a>
         </div>
-        <p class="copyright">&copy; 2026 Codec academy. Student-led, community-driven.</p>
+        <p class="copyright" data-i18n="footer_copy">&copy; 2026 Codec academy. Student-led, community-driven.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-

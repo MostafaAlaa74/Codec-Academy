@@ -5,55 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Codec</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">t">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">CODEC</a>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <a href="index.html" class="logo" style="font-family: 'Orbitron', sans-serif;">CODEC</a>
+        <div class="nav-controls">
+            <button id="lang-toggle" class="lang-btn"></button>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="learn.html" data-i18n="nav_learn">Learn</a></li>
+            <li><a href="courses.html" data-i18n="nav_courses">Courses</a></li>
+            <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact</a></li>
         </ul>
     </nav>
 
     <section style="margin-top: 80px; min-height: 90vh;">
         <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
-            <h2 class="section-title">Get in <span>Touch</span></h2>
-            <p style="max-width: 600px; margin: 0 auto; color: #888; font-size: 1.1rem;">Whether you have a question about our community or just want to say hi, we'd love to hear from you.</p>
+            <h2 class="section-title">
+                <span data-i18n="contact_title_1">Get in</span> <span style="color: var(--accent-color);" data-i18n="contact_title_2">Touch</span>
+            </h2>
+            <p data-i18n="contact_subtitle" style="max-width: 600px; margin: 0 auto; color: #888; font-size: 1.1rem;">Whether you have a question about our community or just want to say hi, we'd love to hear from you.</p>
         </div>
         
         <div class="split-section reveal" style="align-items: flex-start;">
             <div class="split-text">
-                <h3 style="font-size: 2rem; margin-bottom: 1.5rem;">Contact Information</h3>
-                <p style="color: #888; margin-bottom: 2.5rem;">Reach out to us directly via email or connect with us on our social platforms. We typically respond within 24 hours.</p>
+                <h3 data-i18n="info_title" style="font-size: 2rem; margin-bottom: 1.5rem;">Contact Information</h3>
+                <p data-i18n="info_desc" style="color: #888; margin-bottom: 2.5rem;">Reach out to us directly via email or connect with us on our social platforms. We typically respond within 24 hours.</p>
                 
                 <div style="margin-bottom: 2rem;">
                     <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-                        <div style="width: 40px; height: 40px; background: var(--secondary-bg); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; border: 1px solid #333;">
+                        <div class="mail-element" style="width: 40px; height: 40px; background: var(--secondary-bg); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; border: 1px solid #333;">
                             <span style="color: var(--accent-color);">@</span>
                         </div>
                         <div>
-                            <p style="font-size: 0.8rem; color: #555; text-transform: uppercase; letter-spacing: 1px;">Email Us</p>
+                            <p data-i18n="lbl_email" style="font-size: 0.8rem; color: #555; text-transform: uppercase; letter-spacing: 1px;">Email Us</p>
                             <p style="font-weight: 600; color: var(--accent-color);">mostafa.alaa7453@gmail.com</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="social-links" style="text-align: left; margin-top: 3rem;">
-                    <p style="font-size: 0.8rem; color: #555; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;">Follow Us</p>
+                    <p data-i18n="lbl_follow" style="font-size: 0.8rem; color: #555; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;">Follow Us</p>
                     <a href="https://www.facebook.com/share/1E9acRGgLJ/" style="margin-left: 0; margin-right: 1.5rem;">Facebook</a>
                     <a href="https://www.tiktok.com/@codec302?is_from_webapp=1&sender_device=pc" style="margin-left: 0; margin-right: 1.5rem;">Tiktok</a>
                 </div>
@@ -63,26 +66,26 @@
                 <form id="contact-form">
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
                         <div class="form-group">
-                            <label style="display: block; font-size: 0.8rem; color: #666; margin-bottom: 8px; text-transform: uppercase;">Name</label>
-                            <input type="text" placeholder="Your Name" style="width: 100%; background: #0a0a0a; border: 1px solid #333; padding: 12px; border-radius: 8px; color: #fff; outline: none; transition: var(--transition);">
+                            <label data-i18n="form_name" style="display: block; font-size: 0.8rem; color: #666; margin-bottom: 8px; text-transform: uppercase;">Name</label>
+                            <input data-i18n="ph_name" type="text" placeholder="Your Name" style="width: 100%; background: #0a0a0a; border: 1px solid #333; padding: 12px; border-radius: 8px; color: #fff; outline: none; transition: var(--transition);">
                         </div>
                         <div class="form-group">
-                            <label style="display: block; font-size: 0.8rem; color: #666; margin-bottom: 8px; text-transform: uppercase;">Email</label>
-                            <input type="email" placeholder="Your Email" style="width: 100%; background: #0a0a0a; border: 1px solid #333; padding: 12px; border-radius: 8px; color: #fff; outline: none; transition: var(--transition);">
+                            <label data-i18n="form_email" style="display: block; font-size: 0.8rem; color: #666; margin-bottom: 8px; text-transform: uppercase;">Email</label>
+                            <input data-i18n="ph_email" type="email" placeholder="Your Email" style="width: 100%; background: #0a0a0a; border: 1px solid #333; padding: 12px; border-radius: 8px; color: #fff; outline: none; transition: var(--transition);">
                         </div>
                     </div>
                     <div class="form-group" style="margin-bottom: 2rem;">
-                        <label style="display: block; font-size: 0.8rem; color: #666; margin-bottom: 8px; text-transform: uppercase;">Message</label>
-                        <textarea rows="5" placeholder="How can we help?" style="width: 100%; background: #0a0a0a; border: 1px solid #333; padding: 12px; border-radius: 8px; color: #fff; outline: none; transition: var(--transition); resize: none;"></textarea>
+                        <label data-i18n="form_msg" style="display: block; font-size: 0.8rem; color: #666; margin-bottom: 8px; text-transform: uppercase;">Message</label>
+                        <textarea data-i18n="ph_msg" rows="5" placeholder="How can we help?" style="width: 100%; background: #0a0a0a; border: 1px solid #333; padding: 12px; border-radius: 8px; color: #fff; outline: none; transition: var(--transition); resize: none;"></textarea>
                     </div>
-                    <a  href="mail:mostafa.alaa7453@gmail.com" type="submit" class="btn" style="width: 100%; text-align: center; border: none; cursor: pointer;">Send Message</a>
+                    <a href="mailto:mostafa.alaa7453@gmail.com" type="submit" class="btn" style="width: 100%; text-align: center; border: none; cursor: pointer; display:block;" data-i18n="form_btn">Send Message</a>
                 </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <p class="copyright">&copy; 2026 Codec academy. Student-led, community-driven.</p>
+        <p class="copyright" data-i18n="footer_copy">&copy; 2026 Codec academy. Student-led, community-driven.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -5,42 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codec | Student Programming Community</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav>
-        <a href="index.html" class="logo">CODEC</a>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <a href="index.html" class="logo" style="font-family: 'Orbitron', sans-serif;">CODEC</a>
+        
+        <div class="nav-controls">
+            <button id="lang-toggle" class="lang-btn"></button>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="learn.html" data-i18n="nav_learn">Learn</a></li>
+            <li><a href="courses.html" data-i18n="nav_courses">Courses</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
     </nav>
 
     <header class="hero">
-        <h1>Learn Programming <br><span>the Right Way.</span></h1>
-        <p>Codec is a student-led programming community dedicated to building a solid foundation in software development through peer learning and practice.</p>
-        <a href="learn.html" class="btn">Start Your Journey</a>
+        <h1 data-i18n="hero_title">Learn Programming <br><span>the Right Way.</span></h1>
+        <p data-i18n="hero_desc">Codec is a student-led programming community dedicated to building a solid foundation in software development through peer learning and practice.</p>
+        <a href="learn.html" class="btn" data-i18n="hero_cta">Start Your Journey</a>
     </header>
 
     <section>
         <div class="split-section reveal">
             <div class="split-text">
-                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Built by <span>Students</span> to students</h2>
-                <p style="font-size: 1.1rem; color: #999; margin-bottom: 2rem;">We are a community of passionate learners who believe that the best way to master technology is by building together. No corporate fluff, just real coding.</p>
-                <a href="about.html" style="color: var(--accent-color); text-decoration: none; font-weight: 700; border-bottom: 2px solid var(--accent-color);">Read our story &rarr;</a>
+                <h2 data-i18n="sec1_title">Built by <span>Students</span> to students</h2>
+                <p data-i18n="sec1_desc">We are a community of passionate learners who believe that the best way to master technology is by building together. No corporate fluff, just real coding.</p>
+                <a href="about.html" class="link-arrow" style="color: var(--accent-color);"  data-i18n="sec1_link">Read our story &rarr;</a>
             </div>
             <div class="split-image">
                 <img src="images/d7e4443c-7cb5-4709-9a84-955271826721.jpg" alt="Student Community">
@@ -49,16 +57,16 @@
 
         <div class="content-grid">
             <div class="card reveal">
-                <h3>Peer Learning</h3>
-                <p>Exchange knowledge with fellow students who are on the same path as you. Learn faster through collaboration.</p>
+                <h3 data-i18n="card1_title">Peer Learning</h3>
+                <p data-i18n="card1_desc">Exchange knowledge with fellow students who are on the same path as you. Learn faster through collaboration.</p>
             </div>
             <div class="card reveal">
-                <h3>Modern Stack</h3>
-                <p>We focus on the technologies that power the modern web, from fundamental logic to advanced development.</p>
+                <h3 data-i18n="card2_title">Modern Stack</h3>
+                <p data-i18n="card2_desc">We focus on the technologies that power the modern web, from fundamental logic to advanced development.</p>
             </div>
             <div class="card reveal">
-                <h3>Real Projects</h3>
-                <p>Move beyond tutorials. We encourage building real-world applications that solve actual problems.</p>
+                <h3 data-i18n="card3_title">Real Projects</h3>
+                <p data-i18n="card3_desc">Move beyond tutorials. We encourage building real-world applications that solve actual problems.</p>
             </div>
         </div>
     </section>
@@ -69,19 +77,19 @@
                 <img src="images/pexels-markusspiske-6190327.jpg" alt="Coding Workspace">
             </div>
             <div class="split-text">
-                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Master the <span>Fundamentals</span></h2>
-                <p style="font-size: 1.1rem; color: #999; margin-bottom: 2rem;">Don't just copy-paste. Understand the core principles of computer science and software engineering that will serve you for a lifetime.</p>
-                <a href="learn.html" class="btn">Explore Learning Path</a>
+                <h2 data-i18n="sec2_title" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Master the <span>Fundamentals</span></h2>
+                <p data-i18n="sec2_desc" style="font-size: 1.1rem; color: #999; margin-bottom: 2rem;">Don't just copy-paste. Understand the core principles of computer science and software engineering that will serve you for a lifetime.</p>
+                <a href="learn.html" class="btn" data-i18n="sec2_cta">Explore Learning Path</a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="social-links">
-            <a href="https://www.facebook.com/share/1E9acRGgLJ/">Facebook</a>
-            <a href="https://www.tiktok.com/@codec302?is_from_webapp=1&sender_device=pc">Tiktok</a>
+            <a href="#">Facebook</a>
+            <a href="#">Tiktok</a>
         </div>
-        <p class="copyright">&copy; 2026 Codec academy. Student-led, community-driven.</p>
+        <p class="copyright" data-i18n="footer_copy">&copy; 2026 Codec academy. Student-led, community-driven.</p>
     </footer>
 
     <script src="script.js"></script>

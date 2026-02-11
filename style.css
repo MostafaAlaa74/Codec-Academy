@@ -83,10 +83,6 @@ nav {
     align-items: center;
 }
    
-/* 
-    width => 151.96 * 40.95 
-*/
-
 .logo::before {
     content: '</>';
     color: var(--accent-color);
@@ -402,5 +398,81 @@ footer {
     
     section {
         padding: 80px 5%;
+    }
+}
+
+
+/* --- Language Switcher Style --- */
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: bold;
+}
+
+/* زرار اللغة الجديد */
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 6px 14px;
+    border-radius: 20px; /* تدوير الحواف عشان يبقى شكله زي الكبسولة */
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px; /* عشان الحجم ميتغيرش جامد بين الكلمتين */
+}
+
+.lang-btn:hover {
+    background: var(--accent-color);
+    color: #000; /* الكتابة تبقى أسود مع الخلفية السماوي */
+    transform: translateY(-2px); /* حركة بسيطة لفوق */
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.4); /* توهج بسيط */
+}
+
+/* --- ARABIC (RTL) MODES --- */
+/* لما اللغة تكون عربي، الكلاس ده هيتضاف للـ Body */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', sans-serif; /* الخط العربي */
+}
+
+/* تعديل العناوين في العربي */
+body.rtl h1, body.rtl h2, body.rtl h3, body.rtl .btn, body.rtl .logo {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800; /* لان كايرو سميك شوية */
+}
+
+/* عكس اتجاه الأسهم في اللينكات */
+body.rtl .link-arrow {
+    display: inline-block; 
+}
+
+body.rtl .mail-element {
+    margin-right: 0;
+    margin-left: 15px;
+}   
+
+/* تظبيط القائمة في الموبايل للعربي */
+@media (max-width: 768px) {
+    body.rtl .nav-links {
+        left: auto;
+        right: 0; /* القائمة تفتح من اليمين */
     }
 }
